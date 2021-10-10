@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 10 10:11:06 2021
+
+@author: hp
+NAMA: AGFAN HERRU PRATAMA
+NIM: 064002100043
+
+"""
+
+import math 
+
+pilihan1 = int(input("masukan angka pertama : "))
+pilihan2 = int(input("masukan angka kedua : "))
+pilihan3 = int(input("masukan angka ketiga : "))
+
+if pilihan1 == 0 : 
+    print("bukan persamaan kuadrat")
+    
+else:
+    rumus = (pilihan2**2) - (4*pilihan1*pilihan3)
+    
+    if rumus > 0 :
+        x1 = (-pilihan2 + math.sqrt(rumus)) / (2*pilihan1)
+        x2 = (-pilihan2 + math.sqrt(rumus)) / (2*pilihan1)
+        print("merupakan jenis akar yang berbeda")
+        print("jadi persamaan kuadratnya adalah",x1,"dan",x2)
+        print("dengan determinan",rumus,)
+        
+    elif rumus == 0 :
+        x1 = (-pilihan2 ) / (2*pilihan1)
+        x2 = (-pilihan2 ) / (2*pilihan1)
+        print("merupakan jenis akar yang kembar")
+        print("jadi persamaan kuadratnya adalah",x1,"dan",x2)
+        print("dengan determinan",rumus,)
+        
+    elif rumus < 0 :
+        x1 = (-pilihan2 + math.sqrt(rumus)) / (2*pilihan1)
+        x2 = (-pilihan2 + math.sqrt(rumus)) / (2*pilihan1)
+        
+        print("merupakan jenis akar imaginer")
+        print("jadi persamaan kuadratnya adalah",x1,"dan",x2)
